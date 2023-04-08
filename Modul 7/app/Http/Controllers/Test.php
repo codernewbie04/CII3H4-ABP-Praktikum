@@ -1,23 +1,21 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
-use App\Models\Product;
-class ProductController extends Controller
+
+class Test extends Controller
 {
-    //Author: Akmal Muhamad Firdaus - 1301204188
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $products = Product::getAllProducts();
-        //dd($products);
-        return view('product', compact('products'));
+        //
     }
-    public function store(Request $request)
-    {
-        $data = $request->all();
-        $products = Product::addProduct($data);
-        //return redirect()->route('products.index');
-        return view('product', compact('products'));
-    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -27,6 +25,18 @@ class ProductController extends Controller
     {
         //
     }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
     /**
      * Display the specified resource.
      *
@@ -37,6 +47,7 @@ class ProductController extends Controller
     {
         //
     }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -47,6 +58,7 @@ class ProductController extends Controller
     {
         //
     }
+
     /**
      * Update the specified resource in storage.
      *
@@ -58,6 +70,7 @@ class ProductController extends Controller
     {
         //
     }
+
     /**
      * Remove the specified resource from storage.
      *
