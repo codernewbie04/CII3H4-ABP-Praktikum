@@ -7,6 +7,8 @@ void main() {
 //   var isStudent = true;
 //   if(isStudent){
 //     print("Halo $name, kamu adalah student");
+//   } else if(nim == 1301204188){
+//     print("Halo $name, ternyata kamu adalah student");
 //   } else {
 //     print("Maaf $name, kamu bukan student");
 //   }
